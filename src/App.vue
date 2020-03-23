@@ -1,6 +1,5 @@
 <template>
   <div class="main-wrapper">
-    <!--    <Navbar />-->
     <MainPage />
     <Pagination />
     <Error v-show="error" />
@@ -13,7 +12,6 @@ import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "Main-page",
   components: {
-    Navbar: () => import("./components/Navbar"),
     MainPage: () => import("./components/main"),
     Pagination: () => import("./components/Pagination"),
     Error: () => import("./components/Error")
